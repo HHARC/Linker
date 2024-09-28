@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("pexels-pixabay-87009.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 300px;
+  height: 120px;
+  max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100vh;
+}
+
+.add-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  border-radius: 7px;
+}
+
+.add-link-form {
+  background-color: rgba(34, 34, 34, 0.8);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.add-link-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #444;
+  background-color: rgba(51, 51, 51, 0.8);
+  color: #fff;
+}
+
+.add-link-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.link-list {
+  display: grid;
+  gap: 10px;
+}
+
+.link-item {
+  background-color: rgba(34, 34, 34, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-item a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+.link-url {
+  filter: blur(1px);
+  color: #ccc;
+  font-size: 0.8em;
+  word-break: break-all;
+}
+
+.copy-button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.button-group {
+  display: flex;
+  gap: 5px;
+}
+
+.copy-button,
+.delete-button {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.copy-button {
+  background-color: #007bff;
+}
+
+.copy-button:hover {
+  background-color: #0056b3;
+}
+
+.copy-button:disabled {
+  background-color: #28a745;
+  cursor: default;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.copy-button:hover {
+  background-color: #0056b3;
+}
+
+.copy-button:disabled {
+  background-color: #28a745;
+  cursor: default;
+}
+
+.hidden {
+  display: none;
+}
